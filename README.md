@@ -5,6 +5,9 @@ Colorization should work with most themes because it uses common theme token sty
 
 In action:
 
+### VSCode Git Output
+![Colorized Git Output](./github-assets/screenshot-4.png)
+
 ### Default Dark Theme
 ![Default Dark Theme](./github-assets/screenshot-1.png)
 
