@@ -45,7 +45,7 @@
         "color": "#f2f2f2",
         "theme": "light"
     },
-    "icon": "images/icon.png",
+    "icon": "github-assets/icon.png",
     "bugs": {
         "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer"
     },
