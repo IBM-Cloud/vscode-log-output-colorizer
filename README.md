@@ -35,4 +35,4 @@ You can open an issue on the [GitHub repo](https://github.com/IBM-Bluemix/vscode
 [MIT](LICENSE)
 
 ## Attribution
-Portions of the language grammar are based off of a StackOverflow question, asked by user MattDMo and answered by user Wosi, availble under Creative Commons at: http://stackoverflow.com/questions/33403324/how-to-create-a-simple-custom-language-colorization-to-vs-code 
+Portions of the language grammar are based off of a StackOverflow question, asked by user [emilast](http://stackoverflow.com/users/736684/emilast) and answered by user [Wosi](http://stackoverflow.com/users/2023316/wosi), availble under [Creative Commons](http://blog.stackoverflow.com/2009/06/attribution-required/) at: http://stackoverflow.com/questions/33403324/how-to-create-a-simple-custom-language-colorization-to-vs-code 
