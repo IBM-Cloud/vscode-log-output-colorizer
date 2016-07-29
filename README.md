@@ -6,13 +6,13 @@ Colorization should work with most themes because it uses common theme token sty
 In action:
 
 ### VSCode Git Output
-![Colorized Git Output](//raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-4.jpg)
+![Colorized Git Output](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-4.jpg)
 
 ### Default Dark Theme
-![Default Dark Theme](//raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-1.jpg)
+![Default Dark Theme](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-1.jpg)
 
 ### Default Light Theme
-![Default Light Theme](//raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-2.jpg)
+![Default Light Theme](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-2.jpg)
 
 ### Night Blue Theme
-![Night Blue Theme](//raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-3.jpg)
+![Night Blue Theme](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-3.jpg)
