@@ -8,7 +8,7 @@ Colorization should work with most themes because it uses common theme token sty
 ## Contributing
 You can contribute to the project by reading the [Contribution guidelines](https://github.com/IBM-Bluemix/vscode-cloudfoundry/blob/master/CONTRIBUTING.md)
 
-In action:
+## In action
 
 ### VSCode Git Output
 ![Colorized Git Output](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-4.jpg)
