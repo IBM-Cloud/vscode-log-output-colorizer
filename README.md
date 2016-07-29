@@ -5,6 +5,9 @@ Language extension for VSCode/Bluemix Code that adds syntax colorization for bot
 
 Colorization should work with most themes because it uses common theme token style names. It also works with most instances of the output panel. Initially attempts to match common literals (strings, dates, numbers, guids) and warning|info|error|server|local messages.
 
+## Contributing
+You can contribute to the project by reading the [Contribution guidelines](https://github.com/IBM-Bluemix/vscode-cloudfoundry/blob/master/CONTRIBUTING.md)
+
 In action:
 
 ### VSCode Git Output
@@ -24,6 +27,9 @@ In action:
 * https://code.visualstudio.com/docs/customization/colorizer
 * http://stackoverflow.com/questions/33403324/how-to-create-a-simple-custom-language-colorization-to-vs-code 
 * http://manual.macromates.com/en/language_grammars
+
+## Support
+You can open an issue on the [GitHub repo](https://github.com/IBM-Bluemix/vscode-log-output-colorizer/issues)
 
 ## License
 [MIT](LICENSE)
