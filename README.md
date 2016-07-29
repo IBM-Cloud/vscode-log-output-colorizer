@@ -16,3 +16,9 @@ In action:
 
 ### Night Blue Theme
 ![Night Blue Theme](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/github-assets/screenshot-3.jpg)
+
+## Helpful References:
+
+* https://code.visualstudio.com/docs/customization/colorizer
+* http://stackoverflow.com/questions/33403324/how-to-create-a-simple-custom-language-colorization-to-vs-code 
+* http://manual.macromates.com/en/language_grammars
