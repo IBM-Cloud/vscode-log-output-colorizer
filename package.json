@@ -41,16 +41,10 @@
     "devDependencies": {
 		"vscode": "^0.11.0"
 	},
-    "dependencies": {
-		"vscode": "^0.11.0",
-        "run-in-terminal": "0.0.2",
-        "openurl" : "1.1.1"
-	},
     "galleryBanner": {
         "color": "#f2f2f2",
         "theme": "light"
     },
-    "icon": "images/icon.png",
     "bugs": {
         "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer"
     },
