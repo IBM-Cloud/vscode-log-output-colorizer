@@ -29,9 +29,16 @@
             <dict>
                 <!-- Exception (with custom naming) -->
                 <key>match</key>
-                <string>\b(?i:([a-z]|[0-9])*Exception)\b</string>
+                <string>\b(?i:((([a-z]|[0-9])*\.)*[a-z]|[0-9])*Exception)\b</string>
                 <key>name</key>
                 <string>error-token</string>
+            </dict>
+            <dict>
+                <!-- Namespace -->
+                <key>match</key>
+                <string>\b(?i:(([a-z]|[0-9])*(\.([a-z]|[0-9])*)*))\b</string>
+                <key>name</key>
+                <string>info-token</string>
             </dict>
             <dict>
                 <!-- Quoted strings with ' or " -->
