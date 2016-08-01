@@ -69,6 +69,20 @@
                 <string>constant.numeric</string>
             </dict>
             <dict>
+                <!-- Numeric (decimal) -->
+                <key>match</key>
+                <string>\b\d+\.?\d*?\b</string>
+                <key>name</key>
+                <string>constant.numeric</string>
+            </dict>
+            <dict>
+                <!-- Numeric (hex) -->
+                <key>match</key>
+                <string>\b(?i:(0?x)?[0-9a-f][0-9a-f]+)\b</string>
+                <key>name</key>
+                <string>constant.numeric</string>
+            </dict>
+            <dict>
                 <!-- Namespace -->
                 <key>match</key>
                 <string>\b(?i:(([a-z]|[0-9])*(\.([a-z]|[0-9])*)+))\b</string>
