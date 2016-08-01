@@ -13,30 +13,28 @@
         <key>patterns</key>
         <array>
             <dict>
+                <!-- GUID -->
                 <key>match</key>
-                <string>[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}</string>
+                <string>\b(?i:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}))\b</string>
                 <key>name</key>
                 <string>info-token</string>
             </dict>
             <dict>
+                <!-- email address -->
                 <key>match</key>
-                <string>\b(?i:(hint|info[\\:]?|information))\b</string>
+                <string>\S+@\S+\.\S+</string>
                 <key>name</key>
                 <string>info-token</string>
             </dict>
             <dict>
+                <!-- Exception (with custom naming) -->
                 <key>match</key>
-                <string>\b(?i:(warning|warn?|test))\b</string>
-                <key>name</key>
-                <string>warn-token</string>
-            </dict>
-            <dict>
-                <key>match</key>
-                <string>\b(?i:(Down|Error|Failure|Fail|Fatal))\b</string>
+                <string>\b(?i:([a-z]|[0-9])*Exception)\b</string>
                 <key>name</key>
                 <string>error-token</string>
             </dict>
             <dict>
+                <!-- Quoted strings with ' or " -->
                 <key>match</key>
                 <string>"([^\\\"]+|\\.)*"|'([^\\\']+|\\.)*'</string>
                 <key>name</key>
@@ -47,6 +45,24 @@
                 <string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\b</string>
                 <key>name</key>
                 <string>constant.numeric</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>\b(?i:(hint|info|information))\b</string>
+                <key>name</key>
+                <string>info-token</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>\b(?i:(warning|warn|test|debug))\b</string>
+                <key>name</key>
+                <string>warn-token</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>\b(?i:(Down|Error|Failure|Fail|Fatal))\b</string>
+                <key>name</key>
+                <string>error-token</string>
             </dict>
             <dict>
                 <key>match</key>
@@ -61,16 +77,11 @@
                 <string>comment.line</string>
             </dict>
             <dict>
+                <!-- output from (npm install) log -->
                 <key>match</key>
                 <string>(-)+>|├(─)+</string>
                 <key>name</key>
                 <string>comment.line</string>
-            </dict>
-            <dict>
-                <key>match</key>
-                <string>\S+@\S+\.\S+</string>
-                <key>name</key>
-                <string>info-token</string>
             </dict>
         </array>
         <key>uuid</key>
