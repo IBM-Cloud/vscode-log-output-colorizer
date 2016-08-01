@@ -129,7 +129,7 @@
             <dict>
                 <!-- output from (npm install) log -->
                 <key>match</key>
-                <string>(-)+>|├(─)+</string>
+                <string>(-)+>|├(─)+|└(─)+</string>
                 <key>name</key>
                 <string>comment.line</string>
             </dict>
