@@ -77,19 +77,19 @@
             </dict>
             <dict>
                 <key>match</key>
-                <string>\b(?i:(Down|Error|Failure|Fail|Fatal))\:?(\b)?</string>
+                <string>\b(?i:(Down|Error|Failure|Fail|Fatal|false))\:?(\b)?</string>
                 <key>name</key>
                 <string>error-token</string>
             </dict>
             <dict>
                 <key>match</key>
-                <string>\b(?i:(hint|info|information))\:?(\b)?</string>
+                <string>\b(?i:(hint|info|information|true))\:?(\b)?</string>
                 <key>name</key>
                 <string>info-token</string>
             </dict>
             <dict>
                 <key>match</key>
-                <string>\b(?i:(warning|warn|test|debug))\:?(\b)?</string>
+                <string>\b(?i:(warning|warn|test|debug|null|undefined))\:?(\b)?</string>
                 <key>name</key>
                 <string>warn-token</string>
             </dict>
