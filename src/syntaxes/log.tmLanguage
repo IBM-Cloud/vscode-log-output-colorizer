@@ -36,7 +36,7 @@
             <dict>
                 <!-- Namespace -->
                 <key>match</key>
-                <string>\b(?i:(([a-z]|[0-9])*(\.([a-z]|[0-9])*)*))\b</string>
+                <string>\b(?i:(([a-z]|[0-9])*(\.([a-z]|[0-9])*)+))\b</string>
                 <key>name</key>
                 <string>info-token</string>
             </dict>
