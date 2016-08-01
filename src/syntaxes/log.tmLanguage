@@ -108,7 +108,7 @@
             <dict>
                 <!-- Generic URI/URL -->
                 <key>match</key>
-                <string>\b(?i:([a-z]|[0-9])+\:((\/\/)?(\S)*)?)</string>
+                <string>\b(?i:([a-z]|[0-9])+\:((\/\/)|((\/\/)?(\S)))+)</string>
                 <key>name</key>
                 <string>info-token</string>
             </dict>
