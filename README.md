@@ -4,7 +4,7 @@
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/IBM.output-colorizer.svg)](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
 [![Ratings](https://vsmarketplacebadge.apphb.com/rating/IBM.output-colorizer.svg)](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
 
-Language extension for VSCode/Bluemix Code that adds syntax colorization for both the output/debug/extensions panel and *.log files.
+Language extension for VSCode/Bluemix Code that adds syntax colorization for both the output/debug/extensions panel and `*.log` files.
 
 Colorization should work with most themes because it uses common theme token style names. It also works with most instances of the output panel. Initially attempts to match common literals (strings, dates, numbers, guids) and warning|info|error|server|local messages.
 
