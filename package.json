@@ -2,7 +2,7 @@
     "name": "output-colorizer",
     "displayName": "Output Colorizer",
     "description": "Syntax highlighting for log output",
-    "version": "0.0.2",
+    "version": "0.0.5",
     "publisher": "IBM",
     "engines": {
         "vscode": "^1.0.0"
@@ -47,8 +47,10 @@
     },
     "icon": "github-assets/icon.png",
     "bugs": {
-        "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer"
+        "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer/issues"
     },
+    "license": "MIT",
+    "homepage": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer/blob/master/README.md",
     "keywords": [
         "IBM",
         "log",

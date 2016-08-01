@@ -1,6 +1,6 @@
 # Issues
 
-If you encounter an issue with this extension you are welcome to submit a [bug report](https://github.com/IBM-Bluemix/vscode-cloudfoundry/issues). Before that, please search for similar issues. It's possible somebody has encountered this issue already.
+If you encounter an issue with this extension you are welcome to submit a [bug report](https://github.com/IBM-Bluemix/vscode-log-output-colorizer/issues). Before that, please search for similar issues. It's possible somebody has encountered this issue already.
 
 # Pull Requests
 

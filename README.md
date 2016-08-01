@@ -1,5 +1,8 @@
 # VSCode Log Output Colorizer
-[![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/blob/master/LICENSE)
+[![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/IBM-Bluemix/vscode-log-output-colorizer/master/LICENSE)
+[![Version](https://vsmarketplacebadge.apphb.com/version/IBM.output-colorizer.svg)](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/IBM.output-colorizer.svg)](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/IBM.output-colorizer.svg)](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer)
 
 Language extension for VSCode/Bluemix Code that adds syntax colorization for both the output/debug/extensions panel and *.log files.
 
