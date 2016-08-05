@@ -13,6 +13,20 @@
         <key>patterns</key>
         <array>
             <dict>
+                <!-- Quoted strings with " -->
+                <key>match</key>
+                <string>\".*\"</string>
+                <key>name</key>
+                <string>token.string</string>
+            </dict>
+            <dict>
+                <!-- Quoted strings with '"' -->
+                <key>match</key>
+                <string>\'.*\'</string>
+                <key>name</key>
+                <string>token.string</string>
+            </dict>
+            <dict>
                 <!-- GUID -->
                 <key>match</key>
                 <string>\b(?i:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}))\b</string>
@@ -32,13 +46,6 @@
                 <string>\b(?i:((([a-z]|[0-9])*\.)*[a-z]|[0-9])*Exception)\b</string>
                 <key>name</key>
                 <string>error-token</string>
-            </dict>
-            <dict>
-                <!-- Quoted strings with ' or " -->
-                <key>match</key>
-                <string>"([^\\\"]+|\\.)*"|'([^\\\']+|\\.)*'</string>
-                <key>name</key>
-                <string>token.string</string>
             </dict>
             <dict>
                 <!-- Date MM/DD/(YY)YY -->
