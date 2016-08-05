@@ -1,60 +1,73 @@
 {
-    "name": "output-colorizer",
-    "displayName": "Output Colorizer",
-    "description": "Syntax highlighting for log output",
-    "version": "0.0.6",
-    "publisher": "IBM",
-    "engines": {
-        "vscode": "^1.0.0"
-    },
-    "categories": [
-        "Languages"
+  "name": "output-colorizer",
+  "displayName": "Output Colorizer",
+  "description": "Syntax highlighting for log output",
+  "version": "0.0.6",
+  "publisher": "IBM",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer.git"
+  },
+  "author": {
+    "name": "Andrew Trice",
+    "email": "amtrice@us.ibm.com"
+  },
+  "contributors": [
+    {
+      "name": "Jeff Sloyer",
+      "email": "jbsloyer@us.ibm.com"
+    }
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "log",
+        "aliases": [
+          "vscode-output-colorizer",
+          "log"
+        ],
+        "extensions": [
+          ".log"
+        ],
+        "configuration": "./log.configuration.json",
+        "mimetypes": [
+          "text/x-code-output"
+        ]
+      }
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer.git"
-    },
-    "author": {
-        "name": "Andrew Trice",
-        "email": "amtrice@us.ibm.com"
-    },
-    "contributors": [
-        {
-            "name": "Jeff Sloyer",
-            "email": "jbsloyer@us.ibm.com"
-        }
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "log",
-            "aliases": ["vscode-output-colorizer", "log"],
-            "extensions": [".log"],
-            "configuration": "./log.configuration.json",
-            "mimetypes": ["text/x-code-output"]
-        }],
-        "grammars": [{
-            "language": "log",
-            "scopeName": "bmcode.log",
-            "path": "./src/syntaxes/log.tmLanguage"
-        }]
-    },
-    "devDependencies": {
-		"vscode": "^0.11.0"
-	},
-    "galleryBanner": {
-        "color": "#f2f2f2",
-        "theme": "light"
-    },
-    "icon": "github-assets/icon.png",
-    "bugs": {
-        "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer/issues"
-    },
-    "license": "MIT",
-    "homepage": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer/blob/master/README.md",
-    "keywords": [
-        "IBM",
-        "log",
-        "color",
-        "output"
+    "grammars": [
+      {
+        "language": "log",
+        "scopeName": "bmcode.log",
+        "path": "./src/syntaxes/log.tmLanguage"
+      }
     ]
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-vinyl-zip": "^1.2.2",
+    "vscode": "^0.11.0"
+  },
+  "galleryBanner": {
+    "color": "#f2f2f2",
+    "theme": "light"
+  },
+  "icon": "github-assets/icon.png",
+  "bugs": {
+    "url": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/IBM-Bluemix/vscode-log-output-colorizer/blob/master/README.md",
+  "keywords": [
+    "IBM",
+    "log",
+    "color",
+    "output"
+  ]
 }
