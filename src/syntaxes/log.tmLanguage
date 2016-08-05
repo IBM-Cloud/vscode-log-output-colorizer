@@ -20,7 +20,7 @@
                 <string>token.string</string>
             </dict>
             <dict>
-                <!-- Quoted strings with '"' -->
+                <!-- Quoted strings with ' -->
                 <key>match</key>
                 <string>\'.*\'</string>
                 <key>name</key>
