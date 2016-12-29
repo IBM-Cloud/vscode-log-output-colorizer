@@ -27,10 +27,11 @@
   "contributes": {
     "languages": [
       {
-        "id": "log",
+        "id": "Log",
         "aliases": [
           "vscode-output-colorizer",
-          "log"
+          "log",
+          "Log"
         ],
         "extensions": [
           ".log"
@@ -43,7 +44,7 @@
     ],
     "grammars": [
       {
-        "language": "log",
+        "language": "Log",
         "scopeName": "bmcode.log",
         "path": "./src/syntaxes/log.tmLanguage"
       }
