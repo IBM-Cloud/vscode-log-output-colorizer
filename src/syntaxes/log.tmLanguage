@@ -17,35 +17,35 @@
                 <key>match</key>
                 <string>"(.*?)"</string>
                 <key>name</key>
-                <string>token.string</string>
+                <string>string.quoted</string>
             </dict>
             <dict>
                 <!-- Quoted strings with ' -->
                 <key>match</key>
                 <string>'(.*?)'</string>
                 <key>name</key>
-                <string>token.string</string>
+                <string>string.quoted</string>
             </dict>
             <dict>
                 <!-- GUID -->
                 <key>match</key>
                 <string>\b(?i:([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}))\b</string>
                 <key>name</key>
-                <string>info-token</string>
+                <string>support.class</string>
             </dict>
             <dict>
                 <!-- email address -->
                 <key>match</key>
                 <string>\S+@\S+\.\S+</string>
                 <key>name</key>
-                <string>info-token</string>
+                <string>markup.bold</string>
             </dict>
             <dict>
                 <!-- Exception (with custom naming and namespacing) -->
                 <key>match</key>
                 <string>\b(?i:((([a-z]|[0-9])*\.)*[a-z]|[0-9])*(Exception|Error|Failure|Fail))\b</string>
                 <key>name</key>
-                <string>error-token</string>
+                <string>invalid</string>
             </dict>
             <dict>
                 <!-- Date MM/DD/(YY)YY -->
@@ -94,31 +94,31 @@
                 <key>match</key>
                 <string>\b(?i:(([a-z]|[0-9])*(\.([a-z]|[0-9])*)+))\b</string>
                 <key>name</key>
-                <string>info-token</string>
+                <string>support.type</string>
             </dict>
             <dict>
                 <key>match</key>
                 <string>\b(?i:(Down|Error|Failure|Fail|Fatal|false))(\:|\b)</string>
                 <key>name</key>
-                <string>error-token</string>
+                <string>invalid.illegal</string>
             </dict>
             <dict>
                 <key>match</key>
                 <string>\b(?i:(hint|info|information|true))(\:|\b)</string>
                 <key>name</key>
-                <string>info-token</string>
+                <string>keyword</string>
             </dict>
             <dict>
                 <key>match</key>
-                <string>\b(?i:(warning|warn|test|debug|null|undefined))(\:|\b)</string>
+                <string>\b(?i:(warning|warn|test|debug|null|undefined|NaN))(\:|\b)</string>
                 <key>name</key>
-                <string>warn-token</string>
+                <string>invalid.deprecated</string>
             </dict>
             <dict>
                 <key>match</key>
                 <string>\b(?i:(local))(\:|\b)</string>
                 <key>name</key>
-                <string>info-token</string>
+                <string>support.function</string>
             </dict>
             <dict>
                 <key>match</key>
@@ -131,7 +131,7 @@
                 <key>match</key>
                 <string>\b(?i:([a-z]|[0-9])+\:((\/\/)|((\/\/)?(\S)))+)</string>
                 <key>name</key>
-                <string>info-token</string>
+                <string>storage</string>
             </dict>
             <dict>
                 <!-- output from (npm install) log -->
