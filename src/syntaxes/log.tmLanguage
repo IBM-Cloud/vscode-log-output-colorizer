@@ -43,7 +43,7 @@
             <dict>
                 <!-- Exception (with custom naming and namespacing) -->
                 <key>match</key>
-                <string>\b(?i:((([a-z]|[0-9])*\.)*[a-z]|[0-9])*(Exception|Error|Failure|Fail))\b</string>
+                <string>\b(?i:((\.)*[a-z]|[0-9])*(Exception|Error|Failure|Fail))\b</string>
                 <key>name</key>
                 <string>invalid</string>
             </dict>
@@ -92,7 +92,7 @@
             <dict>
                 <!-- Namespace -->
                 <key>match</key>
-                <string>\b(?i:(([a-z]|[0-9])*(\.([a-z]|[0-9])*)+))\b</string>
+                <string>\b(?i:(([a-z]|[0-9]|_)*(\.([a-z]|[0-9])*)+))\b</string>
                 <key>name</key>
                 <string>support.type</string>
             </dict>
