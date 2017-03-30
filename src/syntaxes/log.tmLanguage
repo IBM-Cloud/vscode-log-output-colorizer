@@ -3,7 +3,7 @@
 <plist version="1.0">
     <dict>
         <key>scopeName</key>
-        <string>bmcode.log</string>
+        <string>code.log</string>
         <key>fileTypes</key>
         <array>
             <string>log</string>
@@ -26,6 +26,13 @@
                 <key>name</key>
                 <string>string.quoted</string>
             </dict>
+            <!-- <dict>
+                brackets
+                <key>match</key>
+                <string><(.*?)></string>
+                <key>name</key>
+                <string>string.quoted</string>
+            </dict> -->
             <dict>
                 <!-- GUID -->
                 <key>match</key>
@@ -104,7 +111,7 @@
             </dict>
             <dict>
                 <key>match</key>
-                <string>\b(?i:(hint|info|information|true))(\:|\b)</string>
+                <string>\b(?i:(hint|info|information|true|log))(\:|\b)</string>
                 <key>name</key>
                 <string>keyword</string>
             </dict>

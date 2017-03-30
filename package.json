@@ -2,7 +2,7 @@
   "name": "output-colorizer",
   "displayName": "Output Colorizer",
   "description": "Syntax highlighting for log output",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "publisher": "IBM",
   "engines": {
     "vscode": "^1.0.0"
@@ -29,23 +29,25 @@
       {
         "id": "Log",
         "aliases": [
-          "vscode-output-colorizer",
-          "log",
-          "Log"
+          "log"
         ],
         "extensions": [
           ".log"
         ],
         "configuration": "./log.configuration.json",
         "mimetypes": [
-          "text/x-code-output"
+          "log",
+          "text/log",
+          "text/x-log",
+          "text/x-code-output",
+          "x-code-output"
         ]
       }
     ],
     "grammars": [
       {
         "language": "Log",
-        "scopeName": "bmcode.log",
+        "scopeName": "code.log",
         "path": "./src/syntaxes/log.tmLanguage"
       }
     ]
