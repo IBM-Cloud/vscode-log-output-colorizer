@@ -2,7 +2,7 @@
   "name": "output-colorizer",
   "displayName": "Output Colorizer",
   "description": "Syntax highlighting for log files",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "publisher": "IBM",
   "engines": {
     "vscode": "^1.0.0"
