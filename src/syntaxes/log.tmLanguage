@@ -99,7 +99,7 @@
             <dict>
                 <!-- Namespace -->
                 <key>match</key>
-                <string>\b(?i:(([a-z]|[0-9]|_)*(\.([a-z]|[0-9])*)+))\b</string>
+                <string>\b(?i:(([a-z]|[0-9]|[_|-])*(\.([a-z]|[0-9]|[_|-])*)+))\b</string>
                 <key>name</key>
                 <string>support.type</string>
             </dict>

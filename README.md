@@ -6,7 +6,7 @@
 
 Language extension for VSCode/Bluemix Code that adds syntax colorization for both the output/debug/extensions panel and `*.log` files.
 
-**Output panel functionality is currently not working due to a change in VS Code as of version 1.10.2.**
+**Note: If you are using other extensions that colorize the output panel, it could override and disable this extension.**
 
 Colorization should work with most themes because it uses common theme token style names. It also works with most instances of the output panel. Initially attempts to match common literals (strings, dates, numbers, guids) and warning|info|error|server|local messages.
 
