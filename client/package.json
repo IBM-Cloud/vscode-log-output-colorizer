@@ -1,0 +1,15 @@
+{
+    "name": "output-colorizer-client",
+    "description": "Language Server Client for starting the output-colorizer server",
+    "version": "0.1.0",
+    "author": "Justin Hanselman",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "^16.4.13",
+        "@types/vscode": "^1.59.0"
+    }
+}
