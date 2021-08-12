@@ -12,9 +12,9 @@
         "strict": true,                                 /* Enable all strict type-checking options. */
       },
       "include": [
-        "src"
+        "src",
       ],
       "exclude": [
-        "node_modules"
+        "node_modules", ".vscode-test"
       ],
 }

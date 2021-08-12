@@ -14,7 +14,7 @@ import {
     Disposable,
 } from 'vscode';
 
-interface SemanticObject {
+export interface SemanticObject {
   // A Regex compliant string
   pattern: string;
   applies: 'between' | 'eol' | 'eof',
@@ -30,7 +30,7 @@ interface SemanticsFounds {
   matchEndIdx: number;
 }
 
-class OutputColorizerSemanticsProvider implements DocumentSemanticTokensProvider {
+export class OutputColorizerSemanticsProvider implements DocumentSemanticTokensProvider {
 
   private identifiers: SemanticObject[];
   legend: SemanticTokensLegend;
@@ -66,7 +66,7 @@ class OutputColorizerSemanticsProvider implements DocumentSemanticTokensProvider
         if (match) {
           semanticsFoundMap.push({
             idIdx: i,
-            matchEndIdx: regexp.lastIndex - 1,
+            matchEndIdx: regexp.lastIndex,
             matchStartIdx: regexp.lastIndex - match[0].length,
           });
         }
@@ -110,7 +110,7 @@ class OutputColorizerSemanticsProvider implements DocumentSemanticTokensProvider
             }
           
             for(let curLine = startPos.line, end = false; !end && curLine <= eof.line; curLine++) {
-              if (nextSemantic && nextSemantic.line === eof.line) {
+              if (nextSemantic && nextSemantic.line === curLine) {
                 endPosition = new Position(curLine, nextSemantic.character);
                 end = true;
               } else {
