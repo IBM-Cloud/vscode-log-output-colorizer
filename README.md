@@ -10,6 +10,68 @@ Language extension for VSCode/Bluemix Code that adds syntax colorization for bot
 
 Colorization should work with most themes because it uses common theme token style names. It also works with most instances of the output panel. Initially attempts to match common literals (strings, dates, numbers, guids) and warning|info|error|server|local messages.
 
+# Customization
+
+You can customize the semantic identification of the output by adding entries to outputcolorizer.semantics.
+
+## Example:
+
+In settings.json:
+
+```json
+    "outputcolorizer.semantics": [
+        {
+            "pattern": "{.*}",
+            "applies": "between",
+            "tokenType": "info",
+            "tokenModifier": "output"
+        },
+    ]
+```
+
+This will identify anything inside the matching regex pattern as info.output semantics.  Now you are free to add your own color rule:
+
+```json
+// settings.json
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "error.output": "#ff0000",
+            "info.output": "#00ff00"
+        },
+    },
+```
+
+## Settings Object:
+
+```typescript
+interface SemanticObject {
+  pattern: string;    // A Regex compliant string
+  applies: 'between' | 'eol' | 'eof';
+  tokenType: string;
+  tokenModifier: string;
+}
+```
+
+* pattern
+  
+  This is a regex string fed into RegExp() class.  Escape rules apply just as they would to the RegExp class in javascript.
+
+* applies
+
+    | Applies | Description |
+    | ------- | ----------- |
+    | between | From the start to the end of the regex will be identified by the semantic tokenType.tokenModifier |
+    | eol     | From the start of the regex match to the end of the line will be identified by the sematnic tokenType.tokenModifier, unless another token occurs before then |
+    | eof     | From the start of the regex match to the end of the file will be identified by the sematnic tokenType.tokenModifier, unless another token occurs before then |
+
+* tokenType
+
+    This can be either a [standard token](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#standard-token-types-and-modifiers) or a custom name that you would like to assign values to separately.
+
+* tokenModifier
+  
+     This can be either a [standard modifier](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#standard-token-types-and-modifiers) or a custom name that you would like to assign values to separately.
+
 ## Change Log
 
 * **0.1.2** - Updated for compliance with upcoming VS Code marketplace changes

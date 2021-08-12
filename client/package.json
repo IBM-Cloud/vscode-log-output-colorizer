@@ -1,0 +1,25 @@
+{
+    "name": "output-colorizer-client",
+    "description": "Language Server Client for starting the output-colorizer server",
+    "version": "0.1.0",
+    "author": "Justin Hanselman",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "scripts": {
+        "watch": "tsc -watch -p ./"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/chai": "^4.2.21",
+        "@types/glob": "^7.1.4",
+        "@types/mocha": "^9.0.0",
+        "@types/node": "^16.4.13",
+        "@types/vscode": "^1.59.0",
+        "@vscode/test-electron": "^1.6.2",
+        "chai": "^4.3.4",
+        "glob": "^7.1.7",
+        "mocha": "^9.0.3",
+        "typescript": "^4.3.5"
+    }
+}

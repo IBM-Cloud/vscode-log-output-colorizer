@@ -8,7 +8,18 @@
             "runtimeExecutable": "${execPath}",
             "args": [
                 "--extensionDevelopmentPath=${workspaceRoot}"
-            ]
-        }
+            ],
+        },
+        {
+			"name": "Run Client Extension Tests",
+			"type": "extensionHost",
+			"request": "launch",
+			"runtimeExecutable": "${execPath}",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}",
+				"--extensionTestsPath=${workspaceFolder}/client/out/test/suite/index"
+			],
+			"outFiles": ["${workspaceFolder}/client/out/test/**/*.js"]
+		}
     ]
 }

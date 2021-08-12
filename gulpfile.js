@@ -3,7 +3,7 @@ var zip = require('gulp-vinyl-zip').zip;
 
 gulp.task('build-zip', () => {
 	return gulp.src([
-		'src/**',
+		'syntaxes/**',
 		'LICENSE',
 		'package.json',
 		'github-assets/**',

@@ -13,6 +13,10 @@
         <key>patterns</key>
         <array>
             <dict>
+                <key>match</key>
+                <string></string>
+            </dict>
+            <dict>
                 <!-- Quoted strings with " -->
                 <key>match</key>
                 <string>"(.*?)"</string>

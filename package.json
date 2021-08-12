@@ -2,10 +2,10 @@
     "name": "output-colorizer",
     "displayName": "Output Colorizer",
     "description": "Syntax highlighting for log files",
-     "version": "0.1.2",
+    "version": "0.1.2",
     "publisher": "IBM",
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^1.52.0"
     },
     "categories": [
         "Languages"
@@ -18,6 +18,14 @@
         "name": "Andrew Trice",
         "email": "amtrice@us.ibm.com"
     },
+    "main": "./client/out/extension",
+    "activationEvents": [
+        "onLanguage:Log"
+    ],
+    "scripts": {
+        "build": "tsc --build client",
+        "watch": "cd client && yarn watch"
+    },
     "contributors": [
         {
             "name": "Jeff Sloyer",
@@ -25,6 +33,17 @@
         }
     ],
     "contributes": {
+        "configuration": {
+            "title": "Output Colorizer",
+            "properties": {
+                "outputcolorizer.semantics": {
+                    "description": "An array of objects that declares how to scan the output for semantic provisions",
+                    "type": "array",
+                    "default": [],
+                    "scope": "application"
+                }
+            }
+        },
         "languages": [
             {
                 "id": "Log",
@@ -48,14 +67,15 @@
             {
                 "language": "Log",
                 "scopeName": "code.log",
-                "path": "./src/syntaxes/log.tmLanguage"
+                "path": "./syntaxes/log.tmLanguage"
             }
         ]
     },
     "devDependencies": {
+        "@types/node": "^16.4.13",
         "gulp": "^3.9.1",
         "gulp-vinyl-zip": "^1.2.2",
-        "vscode": "^0.11.0"
+        "vscode": "^1.1.37"
     },
     "galleryBanner": {
         "color": "#f2f2f2",
